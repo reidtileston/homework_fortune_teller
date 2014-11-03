@@ -70,4 +70,15 @@ class ZodiacsController < ApplicationController
 
     render 'fish'
   end
+  def capricorn
+    @prediction = "Reid is cool"
+
+    render 'capricorn'
+  end
+
+  def aquarius
+    @prediction = "Boom"
+
+    render 'aquarius'
+  end
 end
