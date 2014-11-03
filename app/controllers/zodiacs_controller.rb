@@ -61,7 +61,6 @@ class ZodiacsController < ApplicationController
 
   def waterbearer
     @prediction = "Today may prove to be one of your busiest in a long time, Aquarius. The promise of continuing success in your personal and professional goals could find you spending a lot of time on the phone, writing emails, or making a few short trips around the community. You might not be able to reach everyone you need to see. Don't worry. Be persistent and you will reach them eventually."
-
     render 'waterbearer'
   end
 
@@ -85,5 +84,24 @@ class ZodiacsController < ApplicationController
     @prediction = "Happy Happy Happy"
 
     render 'pisces'
+  end
+  def sign
+    @sign = params[:the_sign]
+
+    z = Zodiac.find_by({ :sign => params[:the_sign] })
+
+    @prediction = z.fortune
+
+    render 'sign'
+  end
+
+  def creature
+    @creature = params[:the_creature]
+
+    z = Zodiac.find_by({ :creature => params[:the_creature] })
+
+    @prediction = z.fortune
+
+    render 'sign'
   end
 end
