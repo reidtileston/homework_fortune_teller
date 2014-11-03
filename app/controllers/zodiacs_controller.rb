@@ -102,6 +102,6 @@ class ZodiacsController < ApplicationController
 
     @prediction = z.fortune
 
-    render 'sign'
+    render 'creature'
   end
 end
