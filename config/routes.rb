@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get("/zodiacs/sagittarius", { :controller => "zodiacs", :action => "sagittarius" })
   get("/zodiacs/capricorn",   { :controller => "zodiacs", :action => "capricorn" })
   get("/zodiacs/aquarius",    { :controller => "zodiacs", :action => "aquarius" })
-  # get("/zodiacs/pisces",      { :controller => "zodiacs", :action => "fish" })
+  get("/zodiacs/pisces",      { :controller => "zodiacs", :action => "pisces" })
 
 
   # PART 2: VARIABLE ROUTES

@@ -71,14 +71,19 @@ class ZodiacsController < ApplicationController
     render 'fish'
   end
   def capricorn
-    @prediction = "Reid is cool"
+    @prediction = "Today will be a good day"
 
     render 'capricorn'
   end
 
   def aquarius
-    @prediction = "Boom"
+    @prediction = "Happiness for all"
 
     render 'aquarius'
+  end
+   def pisces
+    @prediction = "Happy Happy Happy"
+
+    render 'pisces'
   end
 end
